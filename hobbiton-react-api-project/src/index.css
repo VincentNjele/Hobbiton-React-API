@@ -28,3 +28,7 @@ code {
   justify-content: center;
   justify-content: space-around;
 }
+#descrition {
+  text-align: center;
+  color: rgb(231, 227, 227);
+}

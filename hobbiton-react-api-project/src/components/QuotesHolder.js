@@ -7,7 +7,6 @@ export const QuotesHolder = () => {
 
     const[Quotes,setQuotes] = useState([])
 
-    console.log(Quotes);
     useEffect(()=> {
          fetch(API)
     .then((response)=>response.json())
@@ -19,12 +18,15 @@ export const QuotesHolder = () => {
 
 
   return (
+    <div>
+    <h2 id='descrition'> Welcome to the React Quotes API</h2>
     <div className='cont'>
       {
           Quotes.map((quote) => (
               <QuoteDisplay {...quote} />
           ))
       }
+    </div>
     </div>
   )
 }
